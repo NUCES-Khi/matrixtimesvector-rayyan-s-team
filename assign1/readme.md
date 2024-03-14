@@ -35,10 +35,14 @@
 - With small matrix size we are not getting any speedup with parallel programs
 
 ## Major Problems Encountered
-1. Issue 1: Blah blah .....
-    - Solution1: tried to blah blahb
-    - Solution2: treid to blab blah
-    - **Resolved**
-3. Issue 2: Blah blah blah ....
-    - Solution1: tried to blah blahb
-    - **Resolved**
+1 - Syntax Errors:
+One of the primary challenges faced was the occurrence of syntax errors when attempting to run the shell script. These errors manifested as "syntax error: operand expected" or "syntax error: syntax error" messages during script execution. Despite verifying the syntax, the errors persisted, leading to uncertainty about the root cause.
+
+2 - Debugging MPI and OpenMP Invocation:
+Debugging the invocation of MPI and OpenMP programs within the shell script posed a challenge. Ensuring the correct command-line arguments and appropriate execution environment for these parallel programs required meticulous attention to detail. Incorrect invocation resulted in unexpected behavior and erroneous results.
+
+3 - Ensuring Consistent Execution:
+Achieving consistent execution of MPI and OpenMP programs across multiple runs proved challenging. Variability in execution times due to system load, resource contention, or other environmental factors made it difficult to obtain reliable performance measurements. Ensuring that each program executed under similar conditions for accurate comparison demanded careful consideration.
+
+4 - Automation Complexity:
+The complexity of automating the execution of multiple MPI and OpenMP programs across different input sizes added to the challenge. Coordinating the execution of various programs, handling input data, capturing execution times, and aggregating results required a robust and well-structured approach. Balancing automation efficiency with flexibility for future modifications was a key consideration.
